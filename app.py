@@ -635,7 +635,7 @@ def show_result_dialog(result, proba_high, proba_low):
     
     with st.container():
         if risk_percentage < 30:
-            st.baloons()
+            st.balloons()
             st.success("✅ **Good News!** Your risk level is low.")
         elif risk_percentage < 60:
             st.info("ℹ️ **Moderate Risk**: Consider lifestyle improvements.")
@@ -1166,4 +1166,5 @@ elif st.session_state.page == "Disease Details":
     disease_details_page()
 elif st.session_state.page == "About":
     about_page()
+
 
